@@ -18,6 +18,6 @@ public class HelloController {
 
     @GetMapping("/test")
     public String push(){
-        return "提交第二次 测试 git push 触发自动化构建!!";
+        return "提交第三次 测试 git push 触发自动化构建!!";
     }
 }
