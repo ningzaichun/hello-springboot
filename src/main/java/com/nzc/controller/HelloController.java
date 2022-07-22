@@ -15,4 +15,9 @@ public class HelloController {
     public String get(){
         return "hello,jenkins";
     }
+
+    @GetMapping("/test")
+    public String push(){
+        return "测试 git push 触发自动化构建!!";
+    }
 }
