@@ -20,6 +20,6 @@ public class HelloController {
 
     @GetMapping("/github")
     public String push(){
-        return "git push 触发自动化构建!!";
+        return "git push 触发自动化构建!!"+new Date();
     }
 }
