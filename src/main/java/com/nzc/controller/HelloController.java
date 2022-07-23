@@ -3,6 +3,8 @@ package com.nzc.controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Date;
+
 /**
  * @description:
  * @author: Yihui Wang
@@ -13,11 +15,11 @@ public class HelloController {
 
     @GetMapping("/hello")
     public String get(){
-        return "hello,jenkins";
+        return "hello,jenkins ~~"+new Date();
     }
 
-    @GetMapping("/test")
+    @GetMapping("/github")
     public String push(){
-        return "提交第三次 测试 git push 触发自动化构建!!";
+        return "git push 触发自动化构建!!";
     }
 }
